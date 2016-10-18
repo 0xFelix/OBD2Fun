@@ -1,9 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+    }
     compileSdkVersion 23
     buildToolsVersion '23.0.3'
-
     defaultConfig {
         applicationId "com.github.zeroxfelix.obd2fun"
         minSdkVersion 15
@@ -31,6 +32,6 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.jakewharton.timber:timber:4.3.1'
     compile 'com.github.clans:fab:1.6.4'
-    compile "com.androidplot:androidplot-core:0.9.8"
+    compile 'com.androidplot:androidplot-core:0.9.8'
     compile 'com.github.pires:obd-java-api:1.0'
 }
